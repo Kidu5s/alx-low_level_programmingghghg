@@ -14,7 +14,6 @@ az = 'a';
 	{
 		putchar(az);
 		az++;
-		putchar('\n');
 	}
 	return (0);
 }
