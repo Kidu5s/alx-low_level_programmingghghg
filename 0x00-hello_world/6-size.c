@@ -1,6 +1,9 @@
 #include <stdio.h>
-
-/* main is Entry poitn */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	sizeof(char);
@@ -18,3 +21,4 @@ int main(void)
 	}
 	return (0);
 }
+
