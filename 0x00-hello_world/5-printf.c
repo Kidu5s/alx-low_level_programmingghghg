@@ -2,6 +2,7 @@
 
 int main(void)
 {
-	printf("with proper grammer, but the outcome is a piece of art,\n");
+	char *a = "with proper grammer, but the outcome is a piece of art,";
+	printf("%s\n", a);
 	return (0);
 }
