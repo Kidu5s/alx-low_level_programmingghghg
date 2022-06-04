@@ -8,7 +8,21 @@
  */
 int main(void)
 {
-	char a;
-	
-	a = 'a'
-	 
+	char except;
+
+	except = 'a';
+	while (except <= 'z')
+	{
+		if (except == 'q')
+		{
+			continue;
+		}
+		else if (except == 'e')
+		{
+			continue;
+		}
+		putchar(except);
+	}
+		putchar('\n');
+	return (0);
+}
