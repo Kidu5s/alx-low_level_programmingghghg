@@ -16,5 +16,6 @@ a = 0;
 	printf("%d", a);
 	a++;
 	}
+	printf("\n");
 	return (0);
 }
