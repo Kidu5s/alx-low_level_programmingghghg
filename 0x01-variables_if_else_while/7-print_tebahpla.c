@@ -3,18 +3,18 @@
 /**
  * main - Entry point
  *
- * Return: 0 (succsus)
+ * Return: 0 (Succuss)
  *
  */
 int main(void)
 {
-	int 'a';
+	char Aa;
 
-	'a' = 0;
-	while ('a' > 10)
+Aa = 'z';
+	while (Aa >= 'a')
 	{
-		putchar('a');
-		++a;
+		putchar(Aa);
+		--Aa;
 	}
 		putchar('\n');
 	return (0);
