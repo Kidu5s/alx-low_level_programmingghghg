@@ -10,14 +10,14 @@ int main(void)
 {
 	char a;
 
-a = 0;
-	while (a <= 9)
+a = 48;
+	while (a < 58)
 	{
 		putchar(a);
 		++a;
 	}
-a = 'a';
-	while (a <= 'f')
+a = 97;
+	while (a < 103)
 	{
 		putchar(a);
 		++a;
