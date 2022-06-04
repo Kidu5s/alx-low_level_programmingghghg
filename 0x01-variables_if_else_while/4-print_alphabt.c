@@ -1,27 +1,27 @@
 #include <stdio.h>
 
 /**
- *
  * main - Entry point
  *
- * Return: 0 (Success)
+ * Return: 0 (Succes)
  */
 int main(void)
 {
-	char except;
+	char except_the_two;
 
-	except = 'a';
-	while (except <= 'z')
-	{
-		if (except == 'q')
+	except_the_two = 'a';
+	while (except_the_two <= 'z')
+	{	
+		putchar(except_the_two);
+		++except_the_two;
+		if (except_the_two == 'q')
 		{
 			continue;
 		}
-		else if (except == 'e')
+		else if (except_the_two == 'e')
 		{
 			continue;
 		}
-		putchar(except);
 	}
 		putchar('\n');
 	return (0);
