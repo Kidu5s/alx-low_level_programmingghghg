@@ -20,5 +20,6 @@ num_with_comma = '0';
 		}
 		num_with_comma++;
 }
+		putchar('\n');
 	return (0);
 }
