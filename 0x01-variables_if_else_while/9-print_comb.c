@@ -13,6 +13,7 @@ num_with_comma = '0';
 	while (num_with_comma <= '9')
 {
 		putchar(num_with_comma);
+		num_with_comma++;
 		putchar(',');
 		putchar(' ');
 }
