@@ -7,22 +7,18 @@
  */
 int main(void)
 {
-	char except_the_two;
+	char alpha;
 
-	except_the_two = 'a';
-	while (except_the_two <= 'z')
-	{	
-		putchar(except_the_two);
-		++except_the_two;
-		if (except_the_two == 'q')
+	for (alpha = 'a'; alpha <= 'z'; ++alpha)
+	{
+		if (alpha == 'e' || alpha == 'q')
 		{
 			continue;
 		}
-		else if (except_the_two == 'e')
-		{
-			continue;
-		}
+		else
+			putchar(alpha);
 	}
-		putchar('\n');
+			putchar('\n');
 	return (0);
+
 }
