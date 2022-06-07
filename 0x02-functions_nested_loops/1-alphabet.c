@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Prints all alphabet
  *
- * Return: Always 0
+ * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
 	char alphaLower;
 
