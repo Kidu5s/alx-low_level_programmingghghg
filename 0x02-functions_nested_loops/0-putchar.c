@@ -1,15 +1,4 @@
-#include <stdio.h>
-
-/**
- * _putchar - writes the character x to stdout
- * @x: the character to print
- *
- * Return: always 0
- */
-int _putchar(void)
-{
-	return (0);
-}
+#include "main.h"
 
 /**
  * main - Entry point
@@ -18,24 +7,14 @@ int _putchar(void)
  */
 int main(void)
 {
-	char a, b, c, d, e, f, g, h;
-
-	a = '_';
-	b = 'p';
-	c = 'u';
-	d = 't';
-	e = 'c';
-	f = 'h';
-	g = 'a';
-	h = 'r';
-	putchar(a);
-	putchar(b);
-	putchar(c);
-	putchar(d);
-	putchar(e);
-	putchar(f);
-	putchar(g);
-	putchar(h);
-	putchar('\n');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
