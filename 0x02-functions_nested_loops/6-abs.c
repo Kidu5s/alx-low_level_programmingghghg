@@ -2,7 +2,7 @@
 
 /**
  * _abs - prints the absolute value
- * @: where you put the numbers
+ * @i: where you put the numbers
  *
  * Return: always 0
  */
