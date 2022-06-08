@@ -3,24 +3,24 @@
 
 /**
  * numLength - returns the length of string
- * @num: operand number
+ * @z: operand number
  *
  * Return: number of digits
  */
-int numLength(int num)
+int numLength(int z)
 {
-	int length = 0;
+	int l = 0;
 
-	if (!num)
+	if (!z)
 		return (1);
 
-	while (num)
+	while (z)
 	{
-		num = num / 10;
-		length += 1;
+		z = z / 10;
+		l += 1;
 	}
 
-	return (length);
+	return (l);
 }
 
 /**
