@@ -1,6 +1,7 @@
 #include "main.h"
 
-/* print_most_numbers - prints the nubers between 0 and 9
+/**
+ * print_most_numbers - prints the nubers between 0 and 9
  * exept for 2 and 4
  * Return: void
  */
