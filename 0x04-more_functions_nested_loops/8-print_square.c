@@ -21,12 +21,13 @@ void print_square(int size)
         {
             _putchar('#');
         }
+	   else
+	   {
+	    _putchar('\n');
+	   }
 	}
-       	 _putchar('\n'); 
-	if (i >= 0)
-	{
-	_putchar('\n');	
-	}
+       	   _putchar('\n'); 
+	
 	}
     
    
