@@ -1,32 +1,28 @@
 #include "main.h"
 
 /**
- * print_square - pirnts # symbole as squares
- * @size: is the size of the square
- *
- * Return: 0.
- */
+* print_square - pirnts # symbole as squares
+* @size: is the size of the square
+*
+* Return: 0.
+*/
 
 void print_square(int size)
 {
-    int i;
-    int j;
+	int i;
+	int j;
 
-
-    for (i = 0; i < size; ++i)
-    {
-        for (j = 0; j <= size; j++)
+	for (i = 0; i < size; ++i)
 	{
-	   if (j > 0)
-        {
-            _putchar('#');
-	 }
+		for (j = 0; j <= size; j++)
+		{
+			if (j > 0)
+			{
+			_putchar('#');
+			}
+		}
+			_putchar('\n');
 	}
-       	   _putchar('\n'); 
-
-	}
-if (size == 0 || size <0)
-	_putchar('\n'); 
-   
-	
+		if (size == 0 || size < 0)
+			_putchar('\n');
 }
