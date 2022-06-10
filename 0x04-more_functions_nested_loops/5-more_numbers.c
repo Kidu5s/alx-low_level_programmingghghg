@@ -16,13 +16,13 @@ void more_numbers(void)
 	x = 0;
 	while (w < 10)
 	{
-		while (x <= 14) 
+		while (x <= 14)
 		{
 			if (x < 10)
 			{
 				z = x;
 			}
-			else 
+			else
 			{
 				y = x / 10;
 				z = x % 10;
