@@ -28,6 +28,11 @@ void more_numbers(void)
 				z = x % 10;
 				_putchar (y + '0');
 			}
+			_putchar(z + '0');
+			x++;
 		}
+		w++;
+		x = 0;
+		_putchar('\n');
 	}
 }
