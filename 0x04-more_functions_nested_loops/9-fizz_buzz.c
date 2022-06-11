@@ -18,10 +18,10 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
-			 if (i % 10 == 0 && i % 100 == 0)
-        		{
-                		printf("Buzz");
-        		}
+			if (i % 10 == 0 && i % 100 == 0)
+			{
+				printf("Buzz");
+			}
 			else
 				printf("Buzz ");
 		}
@@ -35,5 +35,5 @@ int main(void)
 		}
 	}
 			printf("\n");
-	return (0);
+		return (0);
 }
