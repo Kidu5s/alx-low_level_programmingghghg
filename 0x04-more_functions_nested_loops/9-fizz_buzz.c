@@ -29,6 +29,10 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	if (i % 10 == 0 && i % 100 == 0)
+	{
+		printf("Buzz");
+	}
 			printf("\n");
 	return (0);
 }
