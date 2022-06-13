@@ -10,6 +10,13 @@
  */
 void print_rev(char *s)
 {
-	strrev(s);
+	char i;
+	
+
+	for (i = 0; i <= 9; i--)
+	{
+		_putchar(s[i] + '0');
+	}
+
 	_putchar('\n');
 }
