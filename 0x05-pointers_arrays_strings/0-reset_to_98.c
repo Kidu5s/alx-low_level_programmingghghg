@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - charges any integer to 98
  * @n: the integer to be changed
- * 
+ *
  * Return: void
  */
 
