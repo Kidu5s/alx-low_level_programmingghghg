@@ -3,13 +3,12 @@
 
 /**
  * _strlen - returns the length of a string
- * @s - the string
+ * @s: the string
  *
  * Return: strlen
  */
 
 int _strlen(char *s)
 {
-	strlen(s);
 	return (strlen(s));
 }
