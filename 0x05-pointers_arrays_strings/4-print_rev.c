@@ -4,11 +4,11 @@
 
 /**
  * print_rev - prints the revers of a string
- * @s: is the string
+ * @s: is pointer where the address of the string is kept
  *
  * Return: void
  */
 void print_rev(char *s)
 {
- 	strrev(s);
+	char i;
 }

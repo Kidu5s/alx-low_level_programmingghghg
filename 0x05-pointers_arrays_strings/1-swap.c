@@ -8,8 +8,11 @@
  * Return: void
  */
 
-void swap_int(int *a = &a; int *b = &b)
+void swap_int(int *a, int *b)
 {	
-	*a = *b;
-	*b = *a;
+	int notToChange;	/* Declard a new variable */
+
+	notToChange = *a;	/* Assign the pointer to the new variable */
+	*a = *b;	/* Assign the value of pointer b to a */
+	*b = notToChange; /* Assign the uncanged value of a to b */
 }
