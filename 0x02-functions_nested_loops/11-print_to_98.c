@@ -21,7 +21,7 @@ void print_to_98(int n)
 		{
 			printf("%d, ", x);
 		}
-		else if (x /10 == 9 && x % 10 == 8)
+		else if (x / 10 == 9 && x % 10 == 8)
 		{
 			printf("%d", x);
 		}
@@ -36,7 +36,7 @@ void print_to_98(int n)
 		{
 			printf("%d, ", x);
 		}
-		else if (x /10 == 9 && x % 10 == 8)
+		else if (x / 10 == 9 && x % 10 == 8)
 		{
 			printf("%d", x);
 		}
