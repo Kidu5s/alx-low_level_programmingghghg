@@ -2,23 +2,50 @@
 #include <stdio.h>
 
 /**
-* print_to_98 - print all natural numbers from z to 98.
-* @z: the number
+* print_to_98 - print all natural numbers from n to 98.
+* @n: the number
 *
 * Return: returns nothing.
 */
-void print_to_98(int z)
+void print_to_98(int n)
 {
-	if (z < 98)
+	int x;
+
+	x = n;
+
+	if (n > 98)
 	{
-		for (z = z; z < 98; z++)
-		printf("%d, ", z);
-		printf("%d\n", 98);
+		for (x = n; x >= 98; x--)
+		{
+		if (x > 98)
+		{
+			printf("%d, ", x);
+		}
+		else if (x /10 == 9 && x % 10 == 8)
+		{
+			printf("%d", x);
+		}
+		}
+			printf("\n");
+	}
+	else if (n < 98)
+	{
+		for (x = n; x <= 98; x++)
+		{
+		if (x < 98)
+		{
+			printf("%d, ", x);
+		}
+		else if (x /10 == 9 && x % 10 == 8)
+		{
+			printf("%d", x);
+		}
+		}
+			printf("\n");
 	}
 	else
 	{
-		for (z = z; z > 98; z--)
-		printf("%d, ", z);
-		printf("%d\n", 98);
+		printf("%d", x);
+		printf("\n");
 	}
 }
