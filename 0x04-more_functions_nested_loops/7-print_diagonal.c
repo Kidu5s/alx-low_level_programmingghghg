@@ -1,28 +1,34 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints the diagonal '\' lines
- * @n: is an integer if represents how many diagonals
- *
- * Return: Always 0.
+ * print_diagonal - prints digonal lines
+ * @n: the number of digonals
+ * 
+ * Return: void
  */
-
 void print_diagonal(int n)
 {
 	int i;
 	int j;
 
-	for (j = 0; j <= n; j++)
+	for (i = 1; i <= n; i++)
 	{
-		for (i = 1; i <= n; i++)
+		for (j = 1; j <= n; j++)
 		{
-			if (i >= 0)
+			if (j == i)
 			{
-				_putchar('\\');
+			_putchar('\\');
 			}
-		}
+			else if (j <= 0)
+			{
 				_putchar('\n');
 			}
-	if (n > 0 || n == 0)			
-	_putchar('\n');
+			else
+			{
+				_putchar(' ');
+			}
 		}
+		_putchar('\n');
+	}
+	_putchar('\n');
+}
