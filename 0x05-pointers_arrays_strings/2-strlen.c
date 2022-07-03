@@ -12,9 +12,12 @@ int _strlen(char *s)
 {
 	int length;
 
-	for (length = 0; length <= s[length]; length++)
-	{
+	length = 0;
 	
+	while (s[length])
+	{
+		length++;
 	}
+	
 	return (length);
 }
