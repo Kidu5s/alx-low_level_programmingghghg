@@ -9,7 +9,7 @@
  */
 
 void swap_int(int *a, int *b)
-{	
+{
 	int notToChange;	/* Declard a new variable */
 
 	notToChange = *a;	/* Assign the pointer to the new variable */
