@@ -9,7 +9,15 @@
  * Return: dest
  */
 char *_strcpy(char *dest, char *src)
-{
-	strcpy(dest, src);
-	return (dest);
+{	/*strcpy(dest, src);*/
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	//for ( ; i < n; i++)
+
+	//	dest[i] = '\0';
+
+               return (dest);
 }
