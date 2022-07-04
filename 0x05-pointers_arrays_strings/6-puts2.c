@@ -11,11 +11,7 @@
 void puts2(char *str)
 {
 	int i;
-/*	int sLen;
 
-	for (sLen = 0; str[sLen] != '\0'; sLen++);
-	{
-	}*/
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (i % 2 == 0)
