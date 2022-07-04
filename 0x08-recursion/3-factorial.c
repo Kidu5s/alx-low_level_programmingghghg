@@ -4,18 +4,18 @@
  * factorial - prints the factorial of n n!
  * @n: the integer
  *
- * Return: -1 if lessthan 0 or the n!
+ * Return: -1 if n is lessthan 0
  */
 
 int factorial(int n)
 {
-	if (n <= 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	else if (n <= 1)
+	else if (n == 0)
 	{
-		return (n);
+		return (1);
 	}
 	else
 	{
