@@ -2,6 +2,8 @@
 
 /**
  * main - prints the name of the command given
+ * @argc: count the command put in
+ * @argv[]: prints the command/arguments put in
  *
  * Return: 0.
  */
