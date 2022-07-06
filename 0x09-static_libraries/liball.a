@@ -351,14 +351,6 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-main.c/         0           0     0     644     142       `
-#include "main.h"
-
-int main(void)
-{
-	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-	return (0);
-}
 _putchar.c/     0           0     0     644     248       `
 #include <unistd.h>
 
