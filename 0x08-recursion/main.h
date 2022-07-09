@@ -8,7 +8,7 @@ int sqrt_recursion_2(int i, int j);
 int is_prime_number(int n);
 int _prime_number_2(int a, int b);
 int _putchar(char c);
-int is_pal(char *str, int f, int l;);
+int is_pal(char *str, int f, int l);
 int str_len(char *sl);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
