@@ -24,7 +24,7 @@ int main(void)
 					putchar(' ');
 					putchar(y);
 					putchar(z);
-					if (w + x + y + z == 227 && c == 57)
+					if (w + x + y + z == 227 && w == 57)
 					{
 						break;
 					}
