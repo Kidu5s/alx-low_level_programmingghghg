@@ -17,14 +17,18 @@ int main(void)
 			{
 				for (z = '0'; z <= '9'; z++)
 				{
-					if (w <= x || x <= y || y != z)
+					if (((y + z) > (w + x) && y >= w) || w < y)
 					{
-					putchar(y);
-					putchar(z);
-					putchar(' ');
 					putchar(w);
 					putchar(x);
-					if (w != '9' || x != '9' || y != '9' || z != '8')
+					putchar(' ');
+					putchar(y);
+					putchar(z);
+					if (w + x + y + z == 227 && c == 57)
+					{
+						break;
+					}
+					else
 					{
 						putchar(',');
 						putchar(' ');
