@@ -4,9 +4,9 @@
  * _atoi - changing string to number
  * @s: the string
  *
- * Return: always 0.
+ * Return: Return Integer.
  */
 int _atoi(char *s)
 {
-	_putchar(*s);
+		return (s[0]);
 }
