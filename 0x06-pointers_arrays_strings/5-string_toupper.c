@@ -4,7 +4,7 @@
  * string_toupper - changes all lowercase letters of a sting to upper
  * @s: string to modify
  *
- * Retrun: string modified
+ * Return: string modified
  */
 char *string_toupper(char *s)
 {
