@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-* main - prints the largest prime factor
-*
-* Return: 0
-*/
+ * main - prints the largest prime factor
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	long int i;
@@ -23,9 +23,9 @@ int main(void)
 		else
 		{
 			lpf = i;
-			i /= div;
+			i = i / q;
 
-			if (n == 1)
+			if (i == 1)
 			{
 				printf("%ld\n", lpf);
 				break;
