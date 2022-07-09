@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
- * rev_string - revers the string
- * @s: pointer to char
- * 
- * Return: nothing
- */
+* rev_string - revers the string
+* @s: pointer to char
+*
+* Return: nothing
+*/
 void rev_string(char *s)
 {
 	int length;
@@ -16,6 +16,7 @@ void rev_string(char *s)
 	int tmp;
 
 	length = 0;
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		length += 1;
