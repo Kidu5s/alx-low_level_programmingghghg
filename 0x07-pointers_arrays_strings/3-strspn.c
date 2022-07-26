@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[i] == s[j])
 			{
 				len++;
-			}				
+			}
 			if (s[j + 1] < 'A' || s[j + 1] > 'Z')
 			{
 				if (s[j + 1] < 'a' || s[j + 1] > 'z')
