@@ -24,7 +24,7 @@ void print_diagsums(int *a, int size)
 	while (j < ((size * size) - size))
 	{
 		j += size - 1;
-		sumLeftDiag += a[i];
+		sumLeftDiag += a[j];
 	}
 	printf("%d, %d\n", sumRightDiag, sumLeftDiag);
 }
