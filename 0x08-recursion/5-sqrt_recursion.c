@@ -22,9 +22,9 @@ int _sqrt_recursion(int n)
  */
 int sqrt_recursion_2(int n, int check)
 {
-	if (check * chech == n)
+	if (check * check == n)
 		return (check);
-	else if (check > i)
+	else if (check > n)
 		return (-1);
 	return (sqrt_recursion_2(n, check + 1));
 }
