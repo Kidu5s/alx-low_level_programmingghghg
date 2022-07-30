@@ -14,8 +14,13 @@ char *_strdup(char *str)
 {
 	char *ptr;
 	int i;
+	int j;
 
-	ptr = malloc(sizeof(str) * 1);
+	for (j = 0; str[j] != '\0'; j++)
+		;/* Will increament j */
+	j++; /* in order to add the '\0' */
+
+	ptr = malloc(sizeof(char) * j);
 
 	if (str == NULL)
 		return (NULL);
@@ -23,5 +28,7 @@ char *_strdup(char *str)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
 		ptr[i] = str[i];
+
+	ptr[i] = '\0';
 	return (ptr);
 }
