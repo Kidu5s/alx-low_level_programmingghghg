@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - lasd
- * @s1: 
- * @s2: slkd
- * @n: sld
+ * string_nconcat - dynamically allocat memory to cncatnate two string
+ * @s1: The fist string
+ * @s2: the second string
+ * @n: the length of string to be concatenatd
  *
- * Return: ;asdl
+ * Return: on Success Return a pointer to the strings
+ * on error NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
