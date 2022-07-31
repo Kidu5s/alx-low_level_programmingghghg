@@ -22,6 +22,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 != NULL)
 		for (; s2[j]; j++)
 			;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	if (n >= j)
 		n = j;
 	ptr = malloc(sizeof(char) * (i + n + 1));
