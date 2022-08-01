@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
+int array_length(int min, int max);
 /**
- * array)rande - creates an array of integer
+ * array_range - creates an array of integer
  * @min: the initial value of the array
- * @max the finall value of the array
+ * @max: the finall value of the array
  *
  * Return: pointer to the newely created arraky
  * on faliure NULL
@@ -13,27 +15,42 @@
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int i, j, k;
+	int len, i;
 
-	/* the length of the array */
-	for (i = 0; i < min; i++)
-		;
-	for (j = 0; j < max; j++)
-		;
 	if (min > max)
 		return (NULL);
 
-	ptr = malloc((i + j + 1) * sizeof(int));
+	len = array_length(min, max);
+
+	ptr = malloc(len * sizeof(int));
 	if (ptr == NULL)
 		return (NULL);
 
-	for (k = 0; min <= max; k++)
+	for (i = 0; min <= max; i++)
 	{
 		/* initialize ptr */
-		ptr[k] = min;
+		ptr[i] = min;
 		/* increment min til max */
 		min++;
 	}
 
 	return (ptr);
+}
+/**
+ * array_length - gets the length of the arry
+ * @min: the first element of the array
+ * @max: the last element of the array
+ *
+ * Return: the length
+ */
+int array_length(int min, int max)
+{
+	int len;
+
+	/* the length of the array */
+	for (len = 0; min != max; len++)
+		min++;
+	len++;
+
+	return (len);
 }
