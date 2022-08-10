@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * sturct dog - a structer of dog
+ * struct dog - a structer of dog
  * @name: the name of the dog
  * @age: the age of the dog
  * @owner: the owner of the dog
