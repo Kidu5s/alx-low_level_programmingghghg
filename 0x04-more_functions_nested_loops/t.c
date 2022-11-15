@@ -2,9 +2,15 @@
 
 int main(void)
 {
-	printf("%d\n", 1402 / 1000); /* 1 */ 
-	printf("%d\n", (1402 / 100) % 10); /* 4 */
-	printf("%d\n", (1402 / 10) % 10); /* 0 */
-	printf("%d\n", (1402 % 10)); /* 2 */
+	int i;
+
+	for (i = 0; i > -100; i++)
+	{
+		if (i > -9)
+			printf("%d, ", i);
+	}
+	
+
+	putchar('\n');
 	return (0);
 }
