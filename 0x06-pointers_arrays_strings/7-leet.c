@@ -17,8 +17,8 @@ char *leet(char *str)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (str[i] == CC[j] || s[i] == cc[j])
-				s[i] = num[j];
+			if (str[i] == CC[j] || str[i] == cc[j])
+				str[i] = num[j];
 		}
 	}
 	return (str);
