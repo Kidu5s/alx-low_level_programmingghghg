@@ -15,7 +15,9 @@ char *cap_string(char *str)
 	{
 		for (j = 0; j < 13; j++)
 		{
-			if (str[i] == sep_word[j] && (str[i + 1] >= 'a' && str[i + 1] <= 'z'))
+			if (str[0] <= 'z' && str[0] >= 'a')
+				str[0] -= ' ';
+			else if (str[i] == sep_word[j] && (str[i + 1] >= 'a' && str[i + 1] <= 'z'))
 				str[i + 1] -= ' ';
 		}
 	}
