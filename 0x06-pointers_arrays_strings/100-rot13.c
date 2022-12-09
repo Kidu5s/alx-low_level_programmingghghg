@@ -2,9 +2,9 @@
 
 /**
  * rot13 - Replaces the first 13 characters with the other
- * str: a pointer to the address of first character
+ * @str: a pointer to the address of first character
  *
- * Return: A pointer to char
+ * Return: A pointer to cha
  */
 char *rot13(char *str)
 {
