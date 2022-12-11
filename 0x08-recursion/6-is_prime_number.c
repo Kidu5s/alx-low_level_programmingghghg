@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* _prime_number_2 - Makes possible to evaluate from 1 to n
+* _prime_number_2 - Makes possible to evaluate from 2 to n
 * @i: same number as n
-* @j: number that iterates from 1 to n
+* @j: number that iterates from 2 to n
 *
 * Return: On success 1.
-* On error, -1 is returned, and errno is set appropriately.
+* On error, 0 is returned, and errno is set appropriately.
 */
 int _prime_number_2(int i, int j)
 {
@@ -26,7 +26,7 @@ int _prime_number_2(int i, int j)
 * @n: Number Integer
 *
 * Return: On success 1.
-* On error, -1 is returned, and errno is set appropriately.
+* On error, 0 is returned, and errno is set appropriately.
 */
 int is_prime_number(int n)
 {
