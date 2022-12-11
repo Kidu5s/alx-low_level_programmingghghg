@@ -11,7 +11,8 @@ void _puts_recursion(char *s)
 {
 	if (*s != '\0')
 	{
-		/* prints the first char of the str b/c it
+		/**
+		 * prints the first char of the str b/c it
 		 * pointing to the mem address of the first char
 		 */
 		_putchar(*s);
