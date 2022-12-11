@@ -1,20 +1,15 @@
 #include "main.h"
 
 /**
- * _puts_recursion - prints the string
- * @s: the string
+ * _puts_recursion - prints a string
+ * @s: a pointer that holds the memory address
+ * of the first character of the string
  *
- * Return: void
+ * Return: Nothing.
  */
 void _puts_recursion(char *s)
 {
-	if (*s != '\0')
-	{
-		_putchar(*s); /* if put in front will print normaly */
-		_puts_recursion(s + 1);
-		/* _putchar(*s); if put down here will print revers */
-	}
-
 	if (*s == '\0')
-	_putchar('\n');
-}
+		return;
+	putchar(*s);
+	_puts_recursion(s + 1);
