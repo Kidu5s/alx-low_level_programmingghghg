@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 /**
  * _isnumber - check if it is a nubmer or not
  * @arg: a string to be checked
- * 
+ *
  * Return: 1 if not number
  * 0 if number
  */
