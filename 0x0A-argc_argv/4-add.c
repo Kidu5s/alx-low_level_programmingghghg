@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (!(atoi(argv[i])))
+		if (_isnumber(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
@@ -29,5 +30,16 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", sum);
 
+	return (0);
+}
+int _isnumber(char *arg)
+{
+	int i;
+
+	for (i = 0; arg[i]; i++)
+	{
+		if (arg[i] < '0' || arg[i] > '9')
+			return (1);
+	}
 	return (0);
 }
