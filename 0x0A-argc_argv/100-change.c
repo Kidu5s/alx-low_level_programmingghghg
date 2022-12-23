@@ -2,11 +2,10 @@
 #include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to make 
+ * main - prints the minimum number of coins to make
  * change for an amount of money
  * @argc: count the nubmer of arguments passed in
  * @argv: holds all teh argument passed in
- *
  * Return: 0 on Success
  * 1 on Error.
  */
@@ -19,7 +18,8 @@ int main(int argc, char *argv[])
 		for (argc = 1; argv[argc]; argc++)
 		{
 			i = atoi(argv[argc]);
-			m = i / 25 + i % 25 / 10 + i % 25 % 10 / 5 + i % 25 % 10 % 5 / 2 + i % 25 % 10 % 5 % 2;
+			m = i / 25 + i % 25 / 10 + i % 25 % 10 / 5
+				+ i % 25 % 10 % 5 / 2 + i % 25 % 10 % 5 % 2;
 			l = i / 10 + i % 10 / 5 + i % 10 % 5 / 2 + i % 10 % 5 % 2;
 			k = i / 5 + i % 5 / 2 + i % 5 % 2;
 			j = i / 2 + i % 2;

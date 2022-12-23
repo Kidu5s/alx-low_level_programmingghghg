@@ -49,5 +49,4 @@ int _isnumber(char *arg)
 		if (arg[i] < '0' || arg[i] > '9')
 			return (1);
 	}
-	return (0);
 }
