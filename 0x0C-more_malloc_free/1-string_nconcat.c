@@ -18,9 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (len = 0; s2[len]; len++);
+	for (len = 0; s2[len]; len++)
+		;
 	len++;
-	for (len2 = 0; s1[len2]; len2++);
+	for (len2 = 0; s1[len2]; len2++)
+		;
 	len2++;
 	if (n >= len)
 		n = len;
