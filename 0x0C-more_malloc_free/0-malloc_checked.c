@@ -1,22 +1,18 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * malloc_checked - lksdflk
- * @b: sadklflk
- *
- * Return: klasdlkjf
+ * malloc_checked - allocates memory using malloc
+ * @b: number of bytes to be allocated
+ * 
+ * Return: A pointer to the allocated memroy
+ * if it fails exit with 98
  */
 void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	ptr = malloc(b);
-
+	ptr = malloc(sizeof(ptr) * b);
 	if (ptr == NULL)
-	{
 		exit(98);
-	}
-
 	return (ptr);
 }
