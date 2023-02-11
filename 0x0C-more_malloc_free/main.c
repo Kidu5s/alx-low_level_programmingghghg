@@ -1,42 +1,53 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-char *string_nconcat(char *, char *, unsigned int);
+int *array_range(int, int);
 
 /**
- * main - check the code
+ * simple_print_buffer - prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
  *
- * Reutrn: Always 0.
+ * Return: Nothing.
+ */
+void simple_print_buffer(int *buffer, unsigned int size)
+{
+	unsigned int i;
+
+	i = 0;
+	while (i < size)
+	{
+		if (i % 10)
+		{
+			printf(" ");
+		}
+		if (!(i % 10) && i)
+		{
+			printf("\n");
+		}
+		printf("0x%02x", buffer[i]);
+		i++;
+	}
+	printf("\n");
+}
+
+/**
+ * main - check the code .
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	char *s;
+	int *a;
 
-	s = string_nconcat("Hello", NULL, 12);
-	if (s == NULL)
+	a = array_range(4096, 4096);
+	if (a == NULL)
 	{
-		printf("failed\n");
+		printf("Failed\n");
 		return (1);
 	}
-	printf("%s\n", s);
-	free(s);
-
-	s = string_nconcat(NULL, "Hello", 0);
-	if (s == NULL)
-	{
-		printf("failed\n");
-		return (1);
-	}
-	printf("%s\n", s);
-	free(s);
-
-	s = string_nconcat(NULL, NULL, 10);
-	if (s == NULL)
-	{
-		printf("failed\n");
-		return (1);
-	}
-	printf("%s\n", s);
-	free(s);
+	simple_print_buffer(a, 1024);
+	free(a);
 	return (0);
 }
