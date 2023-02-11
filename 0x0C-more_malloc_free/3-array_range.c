@@ -1,56 +1,23 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
-int array_length(int min, int max);
 /**
- * array_range - creates an array of integer
- * @min: the initial value of the array
- * @max: the finall value of the array
+ * array_range - creates an array of integers
+ * @min: the minimum value
+ * @max: the maximum value
  *
- * Return: pointer to the newely created arraky
- * on faliure NULL
- * if min > max return NULL
+ * Return: the pointer to the newly created array
  */
 int *array_range(int min, int max)
 {
+	int i;
 	int *ptr;
-	int len, i;
 
 	if (min > max)
 		return (NULL);
-
-	len = array_length(min, max);
-
-	ptr = malloc(len * sizeof(int));
+	ptr = malloc(sizeof(int) * (min + max + 1));
 	if (ptr == NULL)
 		return (NULL);
-
-	for (i = 0; min <= max; i++)
-	{
-		/* initialize ptr */
-		ptr[i] = min;
-		/* increment min til max */
-		min++;
-	}
-
+	for (i = min; i <= max; i++)
+		ptr[i] = i;
 	return (ptr);
-}
-/**
- * array_length - gets the length of the arry
- * @min: the first element of the array
- * @max: the last element of the array
- *
- * Return: the length
- */
-int array_length(int min, int max)
-{
-	int len;
-
-	/* the length of the array */
-	for (len = 0; min != max; len++)
-		min++;
-	len++;
-
-	return (len);
 }
