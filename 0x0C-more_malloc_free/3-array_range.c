@@ -19,9 +19,6 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	for (len = 0; min != max; len++)
-		min++;
-	len++;
 
 	len = array_length(min, max);
 
