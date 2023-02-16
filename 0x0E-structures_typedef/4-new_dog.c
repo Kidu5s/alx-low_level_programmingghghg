@@ -53,8 +53,7 @@ char *_strcpy(char *str)
 
 	for (len = 0; str[len]; len++)
 		;
-	len++;
-	ptr = malloc(sizeof(char) * len);
+	ptr = malloc(sizeof(char) * len + 1);
 	for (i = 0; str[i]; i++)
 		ptr[i] = str[i];
 	ptr[i] = '\0';
