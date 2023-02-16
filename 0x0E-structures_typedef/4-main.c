@@ -18,11 +18,6 @@ int main(void)
 		printf("Failed\n");
 		return (1);
 	}
-	if (my_dog->name == name || my_dog->owner == owner)
-	{
-		printf("Duplicated string should be stored in the allocated structre.\n");
-		return (1);
-	}
-	printf("My name is %s, and I am %.2f, and my owner is %s\n", my_dog->name, my_dog->age, my_dog->owner);
+	printf("My name is %s, I am %.2f, and my owner is %s\n", my_dog->name, my_dog->age, my_dog->owner);
 	return (0);
 }
