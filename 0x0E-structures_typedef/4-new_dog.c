@@ -1,8 +1,9 @@
 #include "dog.h"
 
 char *_strcpy(char *str);
+
 /**
- * new_dog: a struct of dog that creats new dog
+ * new_dog - a struct of dog that creats new dog
  * @name: the name of the dog
  * @age: the age of the dog
  * @owner: the owner of the dog
@@ -32,7 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog);
 		return (NULL);
 	}
-	
+
 	new_dog->name = cpy_name;
 	new_dog->age = age;
 	new_dog->owner = cpy_owner;
@@ -42,7 +43,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 /**
  * _strcpy - copies string
  * @str: the string to be copied
- * 
+ *
  * Return: a pointer to the copied string
  */
 char *_strcpy(char *str)
