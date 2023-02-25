@@ -1,38 +1,34 @@
-#include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "calc.h"
 
 /**
-* main - main
-* @argc:
-* @argv:
-*
-* Return:
-*/
-int main(int argc, char *argv[])
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(int ac, char *av[])
 {
-	int num1, num2;
-	char operator;
+	int num1, num2, result;
+	char *operator;
 
-	num1 = atoi(argv[1]);
-	operator = *argv[2];
-	num2 = atoi(argv[3]);
-
-	if (argc != 4)
+	num1 = atoi(av[1]);
+	num2 = atoi(av[3]);
+	operator = av[2];
+	if (ac == 1 || ac > 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (operator != ('+' || '-' || '*' || '/' || '%'))
+	if (operator != "+" || operator != "-" || opertor != "*" || operator != "/" || operator != "%")
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (operator == ('/' || '%') && num2 == 0)
+	if ((operator == "%" || operator == "/") && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
-	}
-
-	printf("%d", get_op_func(operator)(num1, num2));
+	if
+	result = get_op_func(operator)(num1, num2);
+	printf("%d\n", result);
+	return (0);
 }
