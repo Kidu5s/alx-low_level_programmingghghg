@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * main - check the code
@@ -18,7 +18,8 @@ int main(int ac, char *av[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (operator != "+" || operator != "-" || opertor != "*" || operator != "/" || operator != "%")
+	/*
+	if (operator != "+" || operator != "-" || operator != "*" || operator != "/" || operator != "%")
 	{
 		printf("Error\n");
 		exit(99);
@@ -27,7 +28,7 @@ int main(int ac, char *av[])
 	{
 		printf("Error\n");
 		exit(100);
-	if
+		*/
 	result = get_op_func(operator)(num1, num2);
 	printf("%d\n", result);
 	return (0);

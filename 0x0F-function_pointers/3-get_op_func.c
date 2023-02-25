@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * get_op_fucntion - function pointers
@@ -23,7 +23,7 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if(s[i] != ops->op[i])
 			return (NULL);
-		return (ops->
+
 		i++;
 	}
 	return (0);
