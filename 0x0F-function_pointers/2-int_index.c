@@ -7,14 +7,15 @@
 * @size:  size of the array
 * @cmp: pointer to the function to be used to compare values
 *
-* Return: noting
+* Return: -1 if size <= 0 or array == NULL or cmp == NULL or if not found
+* the index if found
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 	int v;
-	/*int counter = 0;*/
+	int checker = 0;
 
 	if (array == NULL || cmp == NULL)
 		return (-1);
@@ -23,13 +24,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 	for (i = 0; i < size; i++)
 	{
 		v = cmp(array[i]);
-		/*counter += v;*/
+		checker += v;
 		if (v != 0)
 			return (i);
 	}
-	/**
-	 * if (counter == 0)
-	 * return (-1);
-	 */
-	 return (0);
+	if (checker == 0)
+		return (-1);
+	return (0);
 }
