@@ -28,6 +28,7 @@ list_t *add_node(list_t **head, const char *str)
 	*head = temp;
 
 	return (*head);
+	free(temp);
 }
 size_t _strlen(char *ptr)
 {
