@@ -22,7 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	len = _strlen(ptr);
 	temp = malloc(sizeof(list_t));
 	if (temp == NULL)
-		return (NULL);	
+		return (NULL);
 	temp->str = ptr;
 	temp->len = len;
 	temp->next = NULL;
@@ -36,14 +36,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (tail->next != NULL)
 		tail = tail->next;
 	tail->next = temp;
-	
+
 	return (tail);
 }
 
 /**
  * _strlen - finds the length of a string
  * @ptr: the string
- * 
+ *
  * Return: The length of the string
  */
 size_t _strlen(char *ptr)
