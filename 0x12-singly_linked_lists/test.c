@@ -1,51 +1,59 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "lists.h"
 
+/*
 struct node {
-	int data;
+	char *data;
 	struct node *link;
 };
-
-struct node *add_beg(struct node **head, int d);
+struct node *add_beg(struct node **head, char *str);
+struct node *print_list(struct node *head);
+*/
 int main(void)
 {
-	struct node *head;
+	/*
+	struct node *head;*/
+	list_t *head;
 
-	head = malloc(sizeof(struct node));
-	head->data = 45;
-	head->link = NULL;
+	head = NULL;
+	add_node(&head, "Alexandro");
+	add_node(&head, "one");
+	add_node(&head, "two");
+	print_list(head);
 
+	return (0);
+}
+/*
+struct node *print_list(struct node *head)
+{
 	struct node *ptr;
 
 	ptr = malloc(sizeof(struct node));
-	ptr->data = 98;
-	ptr->link = NULL;
 
-	head->link = ptr;
-	int data = 3;
-	int data2 = 4;
-	int data3 = 5;
-
-	head = add_beg(&head, data);
-	head = add_beg(&head, data2);
-	head = add_beg(&head, data3);
 	ptr = head;
+	
 	while (ptr != NULL)
 	{
-		printf("%d ", ptr->data);
+		printf("%s ", ptr->data);
 		ptr = ptr->link;
 	}
 	printf("\n");
 	return (0);
 }
-struct node *add_beg(struct node **head, int d)
+struct node *add_beg(struct node **head, char *str)
 {
 	struct node *ptr;
+	char *pttr;
 
+	pttr = strdup(str);
 	ptr = malloc(sizeof(struct node));
-	ptr->data = d;
+	ptr->data = pttr;
+	ptr->link = NULL;
+
 	ptr->link = *head;
 	*head = ptr;
 	return (*head);
 }
-
+*/
