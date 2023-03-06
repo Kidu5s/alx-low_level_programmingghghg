@@ -23,7 +23,6 @@ int main(void)
 	ptr = malloc(sizeof(struct node));
 	ptr->data = 2;
 	ptr->link = NULL;
-
 	head->link = ptr;
 
 	head = add_beg(&head, 3);
@@ -62,6 +61,7 @@ struct node *add_beg(struct node **head, int d)
 	*head = ptr;
 	return (*head);
 }
+
 struct node *add_end(struct node **head, int d)
 {
 	struct node *ptr, *temp;
