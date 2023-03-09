@@ -50,7 +50,9 @@ list_t *add_node_end(list_t **head, const char *str)
 size_t _strlen(char *ptr)
 {
 	int i;
-
+	
+	if (ptr == NULL)
+		return (0);
 	for (i = 0; ptr[i]; i++)
 		;
 	return (i);
