@@ -36,6 +36,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (tail->next != NULL)
 		tail = tail->next;
 	tail->next = temp;
+	tail = temp;
 
 	return (tail);
 }
