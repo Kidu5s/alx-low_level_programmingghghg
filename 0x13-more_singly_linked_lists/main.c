@@ -1,8 +1,10 @@
-#include "lists.h"
+#include <stdio.h>
 #include <stdarg.h>
+#include <stdlib.h>
+#include "lists.h"
 
 /**
- * _create_list - create a list
+ * _create_list - Create a list
  *
  * @n: Number of elements
  *
@@ -54,7 +56,7 @@ void _free_listint(listint_t *list)
 }
 
 /**
- * main - check the code
+ * main - check the code .
  *
  * Return: Always 0.
  */
