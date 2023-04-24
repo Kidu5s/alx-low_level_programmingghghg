@@ -1,15 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 
 int main(void)
 {
-	int i[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	int j;
+	char *str;
 
-	for (j = []; j >= 0; j--)
-	       {`:x
-
-	       printf("%d\n", i[j]);
-	       }
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	print_rev(str);
 	return (0);
-}	
-
+}

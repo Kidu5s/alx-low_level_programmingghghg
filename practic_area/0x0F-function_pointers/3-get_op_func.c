@@ -4,7 +4,8 @@
  * get_op_fucntion - function pointers
  * @s: the operator passed as argument to the program
  *
- * Return: a pointer to the function that corresponds to the operator given as a parameter
+ * Return: a pointer to the function
+ * that corresponds to the operator given as a parameter
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -17,14 +18,13 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i;
-
+	
 	i = 0;
-	while (i < 6)
+	while (ops[i].op != NULL)
 	{
-		if(s[i] != ops->op[i])
-			return (NULL);
-
+		if(ops[i].op == s)
+			return (ops[i].f);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
